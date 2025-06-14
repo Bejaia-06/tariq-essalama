@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Association Tariq Essalama Béjaïa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    }
+  </script>
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-white">
+  <!-- HEADER NAV -->
+  <header class="fixed top-0 w-full bg-white dark:bg-gray-800 shadow z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <div class="text-xl font-bold text-blue-700">🚦 Association Tariq Essalama Béjaïa</div>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#hero" class="hover:underline">Accueil</a>
+        <a href="#actualites" class="hover:underline">Actualités</a>
+        <a href="#apropos" class="hover:underline">À propos</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+        <button id="toggleDark">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="min-h-screen flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1563720228441-cdf1df734df0')] bg-cover bg-center pt-20">
+    <div class="bg-black bg-opacity-50 p-10 rounded-xl text-center">
+      <h1 class="text-4xl font-bold text-white mb-4">Sensibiliser pour sauver des vies</h1>
+      <p class="text-lg text-white">Association Tariq Essalama Béjaïa - Pour une route plus sûre en Algérie</p>
+      <a href="#apropos" class="mt-6 inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-800">Découvrir nos actions</a>
+    </div>
+  </section>
+
+  <!-- ACTUALITÉS -->
+  <section id="actualites" class="py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <h2 class="text-3xl font-bold text-center text-blue-600 dark:text-white mb-10">Actualités</h2>
+
+    <div class="space-y-10 max-w-5xl mx-auto">
+      <!-- Don de sang -->
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold text-red-600 mb-2">Journée mondiale du donneur de sang – 14 juin</h3>
+        <p>Notre association s'engage pour remercier les donneurs volontaires et rappeler l'importance de dons réguliers. Les transfusions aident à sauver des millions de vies chaque année.</p>
+      </div>
+
+      <!-- Été et conduite -->
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold text-yellow-600 mb-2">Conduite estivale : vigilance sur la route</h3>
+        <p>À l'approche des vacances, adaptez votre conduite. Retrouvez nos conseils dans l'émission sur la sécurité routière diffusée aujourd’hui sur Radio Soummam.</p>
+      </div>
+
+      <!-- Journée de l'enfance -->
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold text-blue-700 mb-2">Journée mondiale de l'enfance – 1er juin</h3>
+        <p>Chaque année, des milliers d’enfants sont victimes d’accidents de la route. Nous appelons à la construction d’un monde plus sûr et éducatif pour notre jeunesse.</p>
+      </div>
+
+      <!-- Circuit éducatif -->
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold text-green-700 mb-2">Atelier sécurité et secourisme à l’école des sourds</h3>
+        <p>À l’occasion de la journée mondiale de l’enfance, nous avons organisé un circuit éducatif et un atelier de secourisme pour les enfants de l’école Martyr Boualem SETTAR.</p>
+      </div>
+
+      <!-- Campagne Adekar -->
+      <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow">
+        <h3 class="text-2xl font-semibold text-purple-700 mb-2">Campagne de sensibilisation à Adekar</h3>
+        <p>En partenariat avec la gendarmerie et la protection civile, nous avons mené une opération de sensibilisation sur la RN12, une route touristique mais dangereuse reliant Béjaïa à Tizi-Ouzou.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos" class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-700 dark:text-white mb-6">À propos</h2>
+      <p class="text-lg">L’<strong>Association Tariq Essalama Béjaïa</strong> lutte activement contre l’insécurité routière à travers des campagnes de prévention, des actions de sensibilisation, et des activités éducatives destinées aux jeunes, conducteurs, et piétons. Basée à Béjaïa, nous collaborons avec les autorités locales pour sauver des vies.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 px-4 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-700 dark:text-white mb-6">Contact</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Nom" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600" required>
+        <input type="email" placeholder="Email" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600" required>
+        <textarea placeholder="Votre message" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600" rows="5" required></textarea>
+        <button class="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-900">Envoyer</button>
+      </form>
+      <div class="mt-6 text-sm">
+        <p><strong>Adresse :</strong> Cité Tobbal, Béjaïa, Algérie</p>
+        <p><strong>Téléphone :</strong> 0555 74 99 17</p>
+        <p><strong>Email :</strong> tariq.essalama@gmail.com</p>
+        <p><strong>Forum :</strong> salama06.forum.st</p>
+        <p><strong>Heures d’ouverture :</strong> Toujours ouvert</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 Association Tariq Essalama Béjaïa. Tous droits réservés.</p>
+    <a href="#hero" class="block mt-2 text-sm underline">Retour en haut ↑</a>
+  </footer>
+
+  <!-- DARK MODE TOGGLE JS -->
+  <script>
+    document.getElementById('toggleDark').addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+
+</html>
